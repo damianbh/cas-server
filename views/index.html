@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "XHTML1-s.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml"
+      xml:lang="en" lang="en" >
+
+<head>
+  <title>CASCentral Login</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body onload="if (document.getElementById('username')) document.getElementById('username').focus()">
+<table id="login-box">
+  <tr>
+    <td colspan="2">
+      <div id="headline-container">
+        <strong>CAS</strong>
+        Central Login
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td id="logo-container">
+      <img id="logo" src="images/logo.png" />
+    </td>
+    <td id="login-form-container">
+      <form method="post" action="login" id="login-form"
+            onsubmit="submitbutton = document.getElementById('login-submit'); submitbutton.value='Please wait...'; submitbutton.disabled=true; return true;">
+        <table id="form-layout">
+          <tr>
+            <td id="username-label-container">
+              <label id="username-label" for="username">
+                Username
+              </label>
+            </td>
+            <td id="username-container">
+              <input type="text" id="username" name="name"
+                     size="32" tabindex="1" accesskey="u" />
+            </td>
+          </tr>
+          <tr>
+            <td id="password-label-container">
+              <label id="password-label" for="password">
+                Password
+              </label>
+            </td>
+            <td id="password-container">
+              <input type="password" id="password" name="password"
+                     size="32" tabindex="2" accesskey="p" autocomplete="off" />
+            </td>
+          </tr>
+          <tr>
+            <td />
+            <td id="submit-container">
+              <!--<input type="hidden" id="lt" name="lt" value="{{loginTicket}}" />-->
+              <input type="hidden" id="service" name="service" value="{{service}}" />
+              <input type="submit" class="button" accesskey="l" value="LOGIN"
+                     tabindex="4" id="login-submit" />
+            </td>
+          </tr>
+
+        </table>
+      </form>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
