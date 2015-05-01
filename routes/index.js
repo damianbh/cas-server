@@ -21,7 +21,7 @@ var express = require('express'),
             name: 'Alejandro',
             lastName: 'Gonzalez',
             password: 'alejandro',
-            roles: ['director'],
+            roles: ['director', 'manager'],
             image: '/images/alejandro.jpg'
         }
     },
