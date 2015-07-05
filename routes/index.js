@@ -10,6 +10,20 @@ var express = require('express'),
             roles: ['director', 'human_resources'],
             image: '/images/nestor.jpg'
         },
+        'lgutierrezvalencia@krfs.com': {
+            name: 'Lilia',
+            lastName: 'Gutierrez',
+            password: 'lilia',
+            roles: ['director', 'human_resources', 'manager'],
+            image: '/images/lilia.jpg'
+        },
+        'wmedina@krfs.com': {
+            name: 'Williams',
+            lastName: 'Medina',
+            password: 'williams',
+            roles: ['director', 'human_resources', 'manager'],
+            image: '/images/williams.jpg'
+        },
         'damianbh@gmail.com': {
             name: 'Damian',
             lastName: 'Bergantinos',
